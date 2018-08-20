@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package example;
+
+import "google/protobuf/timestamp.proto";
+
+
+
+
+service Example {
+    rpc Get(GetRequest) returns (GetResponse) {};
+}
+
+message GetRequest {
+    string fieldA;
+            int fieldB;
+google.protobuf.Timestamp fieldC;
+}
+
+message GetRequest {
+string a;
+    repeated google.protobuf.Timestamp b;
+}
