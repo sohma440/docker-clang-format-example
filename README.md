@@ -3,12 +3,12 @@
 How try:
 
 ```
-// build docker image
-$ docker build -t clang-format:latest .
-
-// move to working directory
-$ cd example
-
-// execute format
-$ docker run --rm -t -w /work -v "$(pwd)":/work clang-format
+// build docker image.
+$ docker-compose build
+// exec.
+$ docker-compose up
 ```
+
+#### reference
+
+- https://stackoverflow.com/questions/28896909/how-to-call-clang-format-over-a-cpp-project-folder

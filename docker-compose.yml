@@ -1,0 +1,8 @@
+version: "2"
+services:
+  clang-format:
+    build: .
+    volumes:
+      - ./src:/work
+      - .clang-format:/work/.clang-format
+    working_dir: /work
